@@ -1,17 +1,19 @@
 [package]
 name = "bibliophile"
 version = "0.1.0"
-authors = []
+authors = ["krispylahe"]
 edition = "2021"
 
 [package.metadata.skyline]
-titleid = "01006A800016E000" # Smash Ultimate
+titleid = "0100a6301214e000" # Fire Emblem Engage
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-skyline = "0.2.0"
+engage = { git = "https://github.com/DivineDragonFanClub/engage.git", version = "0.10.0" }
+skyline = { git = "https://github.com/Raytwo/skyline-rs", branch = "preview" }
+unity = { git = "https://github.com/DivineDragonFanClub/unity.git", version = "0.3.0" }
 
 [profile.dev]
 panic = "abort"
